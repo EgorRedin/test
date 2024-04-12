@@ -12,7 +12,7 @@ data = {}
 
 
 async def send_msg(text):
-    await bot.send_message(chat_id=474447825, text=json.dumps(text))
+    await bot.send_message(chat_id=474447825, text=json.dumps(text, ensure_ascii=False))
     data.clear()
 
 
